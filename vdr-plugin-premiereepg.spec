@@ -12,6 +12,7 @@ Group:		Video
 License:	GPL+
 URL:		http://www.muempf.de/
 Source:		http://www.muempf.de/down/vdr-%plugin-%version.tar.gz
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.4.1-6
 Requires:	vdr-abi = %vdr_abi
 
