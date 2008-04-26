@@ -2,18 +2,18 @@
 %define plugin	premiereepg
 %define name	vdr-plugin-%plugin
 %define version	0.0.8
-%define rel	4
+%define rel	5
 
 Summary:	VDR plugin: Parses extended Premiere EPG data
 Name:		%name
 Version:	%version
 Release:	%mkrel %rel
 Group:		Video
-License:	GPL+
+License:	GPLv2+
 URL:		http://www.muempf.de/
 Source:		http://www.muempf.de/down/vdr-%plugin-%version.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	vdr-devel >= 1.4.1-6
+BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
 
 %description
@@ -23,6 +23,7 @@ non-standard format on a non-standard PID.
 
 %prep
 %setup -q -n %plugin-%version
+%vdr_plugin_prep
 
 %build
 %vdr_plugin_build
@@ -42,6 +43,4 @@ rm -rf %{buildroot}
 
 %files -f %plugin.vdr
 %defattr(-,root,root)
-%doc README
-
-
+%doc README HISTORY
