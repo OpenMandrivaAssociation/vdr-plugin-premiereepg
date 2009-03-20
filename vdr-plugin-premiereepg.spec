@@ -2,7 +2,7 @@
 %define plugin	premiereepg
 %define name	vdr-plugin-%plugin
 %define version	0.0.8
-%define rel	6
+%define rel	7
 
 Summary:	VDR plugin: Parses extended Premiere EPG data
 Name:		%name
