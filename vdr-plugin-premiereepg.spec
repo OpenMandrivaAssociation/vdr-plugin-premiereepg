@@ -10,7 +10,7 @@ Version:	%version
 Release:	%mkrel %rel
 Group:		Video
 License:	GPLv2+
-URL:		http://www.muempf.de/
+URL:		https://www.muempf.de/
 Source:		http://www.muempf.de/down/vdr-%plugin-%version.tar.gz
 BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
