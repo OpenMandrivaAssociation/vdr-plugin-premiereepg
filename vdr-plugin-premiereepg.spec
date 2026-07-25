@@ -7,7 +7,7 @@
 Summary:	VDR plugin: Parses extended Premiere EPG data
 Name:		%name
 Version:	%version
-Release:	%mkrel %rel
+Release:	%rel.1
 Group:		Video
 License:	GPLv2+
 URL:		https://www.muempf.de/
